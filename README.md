@@ -9,6 +9,7 @@ Extended from https://www.totaltypescript.com/how-to-create-an-npm-package by @m
 Copy this template, rename the package and start building your own React & Tailwind package.
 
 1.Make a new branch
+
 1. Add your changes
 1. Run `npx changeset` to create a changeset.
 1. Push your changes
@@ -30,9 +31,9 @@ Add it to your Tailwind config.
 
 module.exports = {
   content: [
-    "./src/**/*.{js,jsx,ts,tsx}",
+    './src/**/*.{js,jsx,ts,tsx}',
     // Add this line
-    "./node_modules/my-new-package/**/*.{js,jsx,ts,tsx}",
+    './node_modules/my-new-package/**/*.{js,jsx,ts,tsx}',
   ],
   // ... rest of config
 };
@@ -43,11 +44,9 @@ module.exports = {
 Quick start
 
 ```tsx
-import { MyComponent } from "my-new-package";
+import { MyComponent } from 'my-new-package';
 
 function MyApp() {
-  return (
-    <MyComponent/>
-  );
+  return <MyComponent />;
 }
 ```

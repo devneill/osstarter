@@ -1,9 +1,11 @@
 {
   "name": "osstarter",
   "version": "1.0.1",
-  "description": "A starter template for a TypeScript package",
+  "description": "A starter template for a TypeScript, React & Tailwind package",
   "keywords": [
     "typescript",
+    "react",
+    "tailwind",
     "template"
   ],
   "homepage": "https://github.com/devneill/osstarter",
@@ -18,23 +20,45 @@
   "files": [
     "dist"
   ],
-  "main": "dist/index.js",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    "import": {
+      "types": "./dist/index.d.mts",
+      "default": "./dist/index.mjs"
+    },
+    "require": {
+      "types": "./dist/index.d.cts",
+      "default": "./dist/index.cjs"
+    }
+  },
   "type": "module",
   "license": "MIT",
   "scripts": {
     "dev": "vitest",
-    "build": "tsc",
+    "build": "npm run check-types && bunchee",
     "format": "prettier --write .",
+    "check-types": "tsc --noEmit",
     "check-format": "prettier --check .",
     "check-exports": "attw --pack . --ignore-rules=cjs-resolves-to-esm",
     "test": "vitest run",
     "ci": "npm run build && npm run check-format && npm run check-exports && npm run test",
-    "local-release": "changeset version && changeset publish",
+    "release": "changeset version && changeset publish",
     "prepublishOnly": "npm run ci"
+  },
+  "peerDependencies": {
+    "clsx": "^2.1.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "tailwind-merge": "^2.5.4"
   },
   "devDependencies": {
     "@arethetypeswrong/cli": "^0.16.4",
     "@changesets/cli": "^2.27.9",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "bunchee": "^5.6.1",
     "prettier": "^3.3.3",
     "typescript": "^5.6.3",
     "vitest": "^2.1.4"

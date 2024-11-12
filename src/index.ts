@@ -1,1 +1,1 @@
-export { add } from './utils.js';
+export { MyComponent } from './MyComponent.js';

@@ -46,6 +46,6 @@ Quick start
 import { MyComponent } from 'my-new-package';
 
 function MyApp() {
-  return <MyComponent className='your-tailwind-styles' />;
+  return <MyComponent className="your-tailwind-styles" />;
 }
 ```

@@ -1,6 +1,6 @@
 {
   "name": "osstarter",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A starter template for a TypeScript, React & Tailwind package",
   "keywords": [
     "typescript",

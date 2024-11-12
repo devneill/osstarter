@@ -1,5 +1,11 @@
 # osstarter
 
+## 1.0.3
+
+### Patch Changes
+
+- a2be9ef: Support className prop
+
 ## 1.0.2
 
 ### Patch Changes

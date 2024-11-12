@@ -1,5 +1,11 @@
 # osstarter
 
+## 1.0.2
+
+### Patch Changes
+
+- 4854366: add react and tailwind support
+
 ## 1.0.1
 
 ### Patch Changes

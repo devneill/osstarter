@@ -2,8 +2,7 @@
 
 A starter template for a TypeScript, React & Tailwind package.
 
-Based on https://www.totaltypescript.com/how-to-create-an-npm-package by Matt Pocock.
-https://github.com/user-attachments/assets/6b81b040-52d6-48f2-a956-1cadde0e2a33
+Extended from https://www.totaltypescript.com/how-to-create-an-npm-package by @mattpocock.
 
 ## Make it your own and publish to npm
 
